@@ -19,7 +19,7 @@ namespace Anagram
         // så skal disse også fjernes her.
         internal string cleanString(string stringToBeCleaned)
         {
-            return stringToBeCleaned.Replace(" ", "").ToUpper();
+            return stringToBeCleaned.Replace(" ", "").Replace(",", "").Replace(".", "").Replace("\"", "").Replace("'","").Replace(":","").ToUpper();
         }
 
 
